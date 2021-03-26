@@ -11,18 +11,81 @@
       <a class="main-header__logo">
         <img src="img/logo.svg" width="99" height="21" alt="Логотип туристического клуба Mountain">
       </a>
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item">
+          <a href="#">О нас</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#">Туры</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#">Подбор тура</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#">Блог</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <a class="main-navigation__tel" href="tel:88007773325">8 (800) 777-33-25</a>
+      <a class="main-navigation__search" href="#">Поиск</a>
+      <a class="main-navigation__profile" href="#">Личный кабинет пользователя</a>
     </nav>
   </header>
   <main>
     <h1 class="visually-hidden">Главная страница туристического клуба «Mountain»</h1>
     <section class="promo">
       <h2 class="promo__title">Эверест</h2>
+      <img class="promo__image" src="img/photo-76.jpg" width="1366" height="650" alt="Малоснежные вершины горы Эверест на фоне облачного неба">
+      <a class="promo__link" href="#">Подробнее</a>
     </section>
     <section class="climbing-tours">
       <h2 class="climbing-tours__title">Туры с восхождением на вершины мира</h2>
+      <p class="climbing-tours__text">Мы являемся экспертами в организации альпинистских туров для опытных альпинистов и для новичков. Вы можете доверить нам полную организацию вашего приключения от А до Я и быть уверенными в качестве и безопасности восхождения.</p>
+      <p class="climbing-tours__text">Наша компания предоставляет все необходимое: консультацию по выбору тура, перелет, визу, бронирование проживания, питание, оборудование, необходимое для восхождения, опытных гидов, полное сопровождение.</p>
+      <img class="climbing-tours__image" src="img/map.png" width="798" height="375" alt="Карта туров">
     </section>
     <section class="popular-tours">
       <h2 class="popular-tours__title">Популярные туры</h2>
+      <ul class="popular-tours__list">
+        <li class="popular-tours__item tour-card">
+          <h3 class="tour-card__title"><a href="#">Белуха</a></h3>
+          <img class="tour-card__image" src="img/photo-55.jpg" width="370" height="326" alt="Снежные вершины горы Белуха в облаках">
+          <p class="tour-card__country">Россия</p>
+          <ul class="tour-card__info-list">
+            <li>4506 м</li>
+            <li>12 дней</li>
+            <li>от 45 000 руб.</li>
+          </ul>
+          <p class="tour-card__level">Средний уровень</p>
+          <button class="tour-card__button" type="button"><span class="visually-hidden">Добавить в избранное</span></button>
+        </li>
+        <li class="popular-tours__item tour-card">
+          <h3 class="tour-card__title"><a href="#">Эльбрус</a></h3>
+          <img class="tour-card__image" src="img/photo-83.jpg" width="370" height="326" alt="Группа туристов восходит на гору Эльбрус">
+          <p class="tour-card__country">Россия</p>
+          <ul class="tour-card__info-list">
+            <li>5642 м</li>
+            <li>10 дней</li>
+            <li>от 25 000 руб.</li>
+          </ul>
+          <p class="tour-card__level">Средний уровень</p>
+          <button class="tour-card__button" type="button"><span class="visually-hidden">Добавить в избранное</span></button>
+        </li>
+        <li class="popular-tours__item tour-card">
+          <h3 class="tour-card__title"><a href="#">Килиманджаро</a></h3>
+          <img class="tour-card__image" src="img/photo-43.jpg" width="370" height="326" alt="Острые пики заснеженных вершин горы Килиманджаро">
+          <p class="tour-card__country">Танзания</p>
+          <ul class="tour-card__info-list">
+            <li>5895 м</li>
+            <li>4 дня</li>
+            <li>от 55 000 руб.</li>
+          </ul>
+          <p class="tour-card__level">Простой уровень</p>
+          <button class="tour-card__button" type="button"><span class="visually-hidden">Добавить в избранное</span></button>
+        </li>
+      </ul>
     </section>
     <section class="prices">
       <h2 class="visually-hidden">Стоимость туров</h2>
