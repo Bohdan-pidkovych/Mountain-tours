@@ -86,23 +86,131 @@
           <button class="tour-card__button" type="button"><span class="visually-hidden">Добавить в избранное</span></button>
         </li>
       </ul>
+      <button class="popular-tours__button" type="button">Назад</button>
+      <button class="popular-tours__button" type="button">Вперёд</button>
     </section>
     <section class="prices">
       <h2 class="visually-hidden">Стоимость туров</h2>
+      <p class="prices__title">Россия</p>
+      <p class="prices__description">Более 15 туров для альпинистов всех уровней</p>
+      <table class="prices__table">
+        <tr>
+          <th>Вершина</th>
+          <th>Высота</th>
+          <th>Уровень</th>
+          <th>Стоимость</th>
+        </tr>
+        <tr>
+          <td>Эльбрус</td>
+          <td>5642 м</td>
+          <td>Средний</td>
+          <td>от 25 000 руб.</td>
+        </tr>
+        <tr>
+          <td>Казбек</td>
+          <td>5033 м</td>
+          <td>Сложный</td>
+          <td>от 30 000 руб.</td>
+        </tr>
+        <tr>
+          <td>Белуха</td>
+          <td>4506 м</td>
+          <td>Простой</td>
+          <td>от 20 000 руб.</td>
+        </tr>
+        <tr>
+          <td>Дыхтау</td>
+          <td>5204 м</td>
+          <td>Сложный</td>
+          <td>от 40 000 руб.</td>
+        </tr>
+      </table>
+      <a class="prices__link" href="#">Смотреть все</a>
     </section>
     <section class="blog">
       <h2 class="blog__title">Блог</h2>
+      <ul class="blog__nav">
+        <li class="blog__nav-item blog__nav-item--active">
+          <a href="#">
+            <time datetime="2020-01-15 00:00">15 января, 2020</time>
+            <p>Как подготовиться к первому восхождению на вершину</p>
+          </a>
+        </li>
+        <li class="blog__nav-item">
+          <a href="#">
+            <time datetime="2020-01-10 00:00">10 января, 2020</time>
+            <p>Фестиваль Alpika Freeski Аlpindustria Fest Красная Поляна 13-16 февраля</p>
+          </a>
+        </li>
+        <li class="blog__nav-item">
+          <a href="#">
+            <time datetime="2019-12-20 00:00">20 декабря, 2019</time>
+            <p>Особенности альпинизма на Камчатке. Все о Ключевой Сопке</p>
+          </a>
+        </li>
+        <li class="blog__nav-item">
+          <a href="#">
+            <time datetime="2019-12-15 00:00">15 декабря, 2019</time>
+            <p>Что происходит с человеком на высоте более 3000 метров?</p>
+          </a>
+        </li>
+      </ul>
+      <a class="blog__link" href="#">Читать все новости</a>
       <article class="blog__article article">
         <h3 class="article__title">Как подготовиться к первому восхождению на вершину</h3>
+        <img class="article__image" src="img/photo-77.jpg" width="700" height="287" alt="Три альпиниста со снаряжением в заснеженных горах">
+        <time datetime="2020-01-15 00:00">15 января, 2020</time>
+        <p>Перед тем, как отправиться на покорение вершины горы, нужно не только привести в порядок свою физическую форму, но и тренировать выносливость, дыхательную и сердечно-сосудистую системы. Именно на них приходится максимальная нагрузка на высоте. Поэтому из-за недостаточной подготовки вы можете сойти на полпути. Чтобы этого не случилось, занимайтесь плаванием, бегом, велосипедом и кардиотренировками.</p>
+        <p>Как должны проходить тренировки? В первую очередь, тренировки должны проходить постоянно, эффективно и интенсивно. Кроме того, нагрузка постепенно должна увеличиваться. В случае с бегом обязательно делать это с учетом пульса. Грамотно спланированный бег позволит не только сбросить вес, но и укрепит сердечную мышцу. При беге с высоким пульсом вы позволите организму привыкнуть к недостатку кислорода — то, с чем обязательно встретитесь в горах. Для укрепления физической подготовки и повышения выносливости также бегайте в горку или в быстром темпе поднимайтесь по лестницам. И не забудьте отдохнуть за неделю до путешествия!</p>
       </article>
     </section>
     <section class="feedback">
       <h2 class="feedback__title">Нужна помощь с выбором тура?</h2>
+      <p class="feedback__description">Заполните форму, наш менеджер свяжется с вами в ближайшее время и подберет подходящий тур</p>
+      <form class="feedback__form" action="#" method="post">
+        <label class="visually-hidden" for="name-feedback">Имя</label>
+        <input type="text" name="user-name" id="name-feedback" placeholder="Имя">
+        <label class="visually-hidden" for="phone-feedback">Телефон</label>
+        <input type="tel" name="user-phone" id="phone-feedback" placeholder="Телефон">
+        <label class="visually-hidden" for="email-feedback">E-mail</label>
+        <input type="email" name="user-email" id="email-feedback" placeholder="E-mail">
+        <button type="submit">Отправить</button>
+      </form>
+      <p class="feedback__agreement">Нажимая кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
     </section>
     <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
+      <img class="contacts__map" src="img/map-office.png" width="600" height="457" alt="Карта с адресом офиса">
+      <dl class="contacts__list">
+        <dt>Адрес:</dt>
+        <dd><address>Санкт-Петербург, ул. Большая Конюшенная, 19</address></dd>
+        <dt>Телефон:</dt>
+        <dd><a href="tel:+88007773325">8 (800) 777-33-25</a></dd>
+        <dt>E-mail:</dt>
+        <dd><a href="mailto:info@mountain.ru">info@mountain.ru</a></dd>
+        <dt></dt>
+        <dd>
+          <ul class="contacts__social">
+            <li>
+              <a href="#">Facebook</a>
+            </li>
+            <li>
+              <a href="#">Instagram</a>
+            </li>
+            <li>
+              <a href="#">Twitter</a>
+            </li>
+          </ul>
+        </dd>
+      </dl>
     </section>
   </main>
-  <footer class="main-footer"></footer>
+  <footer class="main-footer">
+    <p class="main-footer__copyright">Maroon &copy; 2020 Все права защищены</p>
+    <a class="main-footer__logo">
+      <img src="img/logo.svg" width="99" height="21" alt="Логотип туристического клуба Mountain">
+    </a>
+    <a class="main-footer__policy" href="#">Политика конфиденциальности</a>
+  </footer>
 </body>
 </html>
